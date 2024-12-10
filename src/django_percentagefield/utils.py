@@ -3,7 +3,7 @@ import sys
 from decimal import Decimal
 from typing import Any
 
-from django.db.utils import models
+from django.db import models
 from django.utils import formats
 from django.utils.safestring import mark_safe, SafeString
 

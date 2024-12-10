@@ -35,7 +35,7 @@ def format_message(message: any, obj: models.Model) -> SafeString | Any:
             value *= 100
 
         # Return the adjusted percentage as a string with '%' sign
-        return f'{value.normalize()}%'
+        return f'{formats.number_format(value.normalize(), use_l10n=True)}%'
 
     try:
         obj_str: str = str(obj)
